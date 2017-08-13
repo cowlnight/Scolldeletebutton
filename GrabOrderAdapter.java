@@ -19,9 +19,6 @@ public class GrabOrderAdapter extends BaseAdapter {
     private LayoutInflater myInflater;
     private Context mContext;
 
-//     List<String> comments = new ArrayList<String>();
-//     List<String> time = new ArrayList<String>();
-//     List<String> locations = new ArrayList<String>();
     String[] comments;
     String[] time;
     String[] locations;
@@ -51,7 +48,6 @@ public class GrabOrderAdapter extends BaseAdapter {
     public View getView(int postition, View convertView, ViewGroup parent) {
         ViewHolder viewholder = null;
         if(convertView == null){
-            //convertView = myInflater.inflate(R.layout.opinion_listview_layout, null);
             convertView = View.inflate(mContext,R.layout.item, null);
             //取得XML內容
 
